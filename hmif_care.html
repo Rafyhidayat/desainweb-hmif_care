@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMIF Care</title>
+    <link rel="stylesheet" href="hmif_care.css">
+</head>
+<body>
+
+    <header class="header">
+        <p>Form Pendaftaran HMIF Care</p>
+    </header>
+    <div id="error"></div>
+<form id="form" action="hmif_care.html" method="GET">
+  <div>
+    <label for="name">Nama</label><br>
+    <input id="name" name="name" type="text" placeholder="Masukkan Nama Lengkap..."><br><br>
+  </div>
+  <div>
+    <label for="nim">NIM</label><br>
+    <input id="nim" name="nim" type="text" placeholder="Masukkan NIM..."><br><br>
+  </div>
+  <div>
+    <label for="nomor_wa">Nomor Whatsapp</label><br>
+    <input id="nomor_wa" name="nomor_wa" type="text" placeholder="Masukkan Nomor Whatsapp..."><br><br>
+  </div>
+  <div>
+    <label for="curhat">Ceritakan sedikit masalah yang kamu alami</label><br>
+    <textarea name="curhat" id="curhat" cols="40" rows="7" placeholder="Saya sedang merasa..."></textarea><br><br>
+  </div>
+  <div class="selection">
+    <div>
+        <label for="media">Media Konseling</label><br>
+        <select form="form" name="media" id="media">
+          <option value=""></option>
+          <option value="offline">Offline</option>
+          <option value="online">Video Conference</option>   
+          <option value="chat">Chat Whatsapp</option>
+        </select><br><br>
+      </div>
+      <div>
+        <label for="pilihan_hari">Pilihan Hari</label><br>
+        <select form="form" name="pilihan_hari" id="pilihan_hari">
+          <option value=""></option>
+          <option value="senin">Senin</option>
+          <option value="selasa">Selasa</option>   
+          <option value="rabu">Rabu</option>
+          <option value="kamis">Kamis</option>
+          <option value="jumat">Jumat</option>
+        </select><br><br>
+      </div>
+      <div>
+        <label for="pilihan_sesi">Pilihan Sesi</label><br>
+        <select form="form" name="pilihan_sesi" id="pilihan_sesi">
+          <option value=""></option>
+          <option value="sesi1">Sesi 1 ( 9.00 - 10.10 WITA )</option>
+          <option value="sesi2">Sesi 2 ( 10.10 - 11.20 WITA )</option>   
+          <option value="sesi3">Sesi 3 ( 11.20 - 12.30 WITA )</option>
+          <option value="sesi4">Sesi 4 ( 13.00 - 14.10 WITA )</option>
+          <option value="sesi5">Sesi 5 ( 14.10 - 15.20 WITA )</option>
+        </select><br><br>
+      </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+<script src="hmif_care.js"></script>
+</html>

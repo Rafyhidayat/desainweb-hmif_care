@@ -1,0 +1,186 @@
+*{
+    font-family: poppins;
+}
+
+body {
+    background-color: #2A2734;
+}
+
+img{
+    float: right;
+    clear: right;
+    padding-top: 10%;   
+}
+
+.header{
+    color: #FFB870;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+label {
+    width: 211px;
+    height: 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFB870;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 600px;
+    height: 35px;
+    background: #9A86FD;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding-left: 2%;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px #FFB870;
+}
+
+::placeholder {
+    color: white;
+}
+
+select:hover {
+    outline: none;
+    box-shadow: 0px 0px 15px #FFB870;
+}
+
+textarea {
+    box-sizing: border-box;
+    background: #9A86FD;
+    width: 600px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding-left: 3%;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px #FFB870;
+}
+
+#media{
+    box-sizing: border-box;
+    width: 160px;
+    height: 35px;
+    background: #9A86FD;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding-left: 2%;
+    color: white;
+}
+
+#pilihan_hari{
+    box-sizing: border-box;
+    width: 160px;
+    height: 35px;
+    background: #9A86FD;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding-left: 2%;
+    color: white;
+}
+
+#pilihan_sesi{
+    box-sizing: border-box;
+    width: 160px;
+    height: 35px;
+    background: #9A86FD;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.5s;
+    padding-left: 2%;
+    color: white;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    background: #9A86FD;
+    border-radius: 25px;
+    color: white;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px #FFB870;
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.valid {
+    display: block;
+    animation: valid 1s forwards;
+}
+
+.fa-spinner {
+    width: 20px;
+    font-size: large;
+    margin: auto;
+    color: #FFB870;
+    animation: spin 2s infinite;
+}
+
+#check {
+    display: none;
+    width: 20px;
+    font-size: large;
+    margin: auto;
+    color: green;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes valid {
+    from {
+        width: 40px;
+    }
+    to {
+        width: 100px;
+    }
+}
